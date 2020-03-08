@@ -1,0 +1,120 @@
+{
+	"common": {
+		"name": "userman",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "userman",
+		"titleLang": {
+			"en": "userman",
+			"de": "Userman",
+			"ru": "UserMan",
+			"pt": "userman",
+			"nl": "userman",
+			"fr": "userman",
+			"it": "USERMAN",
+			"es": "usuario",
+			"pl": "użytkownik",
+			"zh-cn": "用户"
+		},
+		"desc": {
+			"en": "iobroker adapter for THM/SMS userman demonstrator",
+			"de": "iobroker Adapter für THM / SMS Userman Demonstrator",
+			"ru": "Адаптер iobroker для демонстратора пользователей THM / SMS",
+			"pt": "adaptador iobroker para THM / SMS userman demonstrator",
+			"nl": "iobroker adapter voor THM / SMS userman demonstrator",
+			"fr": "adaptateur iobroker pour démonstrateur userman THM / SMS",
+			"it": "adattatore iobroker per dimostratore userman THM / SMS",
+			"es": "Adaptador iobroker para demostrador de usuario THM / SMS",
+			"pl": "Adapter iobroker do demonstratora użytkownika THM / SMS",
+			"zh-cn": "适用于THM / SMS用户演示程序的iobroker适配器"
+		},
+		"authors": [
+			"Peter Kneisel <kneisel@kneisel-online.de>"
+		],
+		"keywords": [
+			"SMS",
+			"THM",
+			"MNI",
+			"userman"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "userman.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/kneisel/ioBroker.userman/master/admin/userman.png",
+		"readme": "https://github.com/kneisel/ioBroker.userman/blob/master/README.md",
+		"loglevel": "info",
+		"mode": "daemon",
+		"type": "storage",
+		"compact": true,
+		"connectionType": "cloud",
+		"dataSource": "poll",
+		"materialize": true,
+		"materializeTab": true,
+		"adminTab": {
+			"singleton": true,
+			"name": {
+				"en": "userman",
+				"de": "Userman",
+				"ru": "UserMan",
+				"pt": "userman",
+				"nl": "userman",
+				"fr": "userman",
+				"it": "USERMAN",
+				"es": "usuario",
+				"pl": "użytkownik",
+				"zh-cn": "用户"
+			},
+			"link": "",
+			"fa-icon": "info"
+		},
+		"supportCustoms": true,
+		"dependencies": [
+			{
+				"js-controller": ">=1.4.2"
+			}
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}
