@@ -18,7 +18,6 @@
 		"prefer-const": "error",
 		"quotes": [
 			"error",
-			"double",
 			{
 				"avoidEscape": true,
 				"allowTemplateLiterals": true
